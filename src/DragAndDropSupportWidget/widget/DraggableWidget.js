@@ -35,7 +35,8 @@ require([
         _setupEvents: function () {
             // http://api.jqueryui.com/draggable/
             var options = {
-                containment: this.dragContainment || false,
+                appendTo: "body",
+				containment: this.dragContainment || false,
                 revert: "invalid",
                 helper: this.makeClone ? "clone" : "original"
             };
